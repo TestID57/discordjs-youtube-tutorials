@@ -12,7 +12,7 @@ client.on('ready', () => console.log("Logged in."));
 client.on('message', async message => {
     if(message.author.bot) return;
 
-    if(message.content.toLowerCase() === '!search') {
+    if(message.content.toLowerCase() === 'r!search') {
         let embed = new discord.RichEmbed()
             .setColor("#73ffdc")
             .setDescription("Please enter a search query. Remember to narrow down your search.")
